@@ -1,4 +1,4 @@
-#Fase 1: Comunicação simples, Feign, Ribbon
+# Fase 1: Comunicação simples, Feign, Ribbon
 
 1.1 Criar projeto hr-worker
 
@@ -21,11 +21,16 @@ server.port=8001
 
 # Database configuration
 spring.datasource.url=jdbc:h2:mem:testdb
+
 spring.datasource.username=sa
+
 spring.datasource.password=
 
+
 spring.h2.console.enabled=true
+
 spring.h2.console.path=/h2-console
+
 
 -------------------------------------------------------------------
 
@@ -52,7 +57,7 @@ Run configuration
 
 ---------------------------------------------------------------------
 
-#Fase 2: Eureka, Hystrix, Zuul
+# Fase 2: Eureka, Hystrix, Zuul
 
 2.1 Criar projeto hr-eureka-server
 
@@ -104,7 +109,7 @@ Se o timeout estiver configurado somente em Zuul, o Hystrix vai chamar o método
 
 ---------------------------------------------------------------
 
-#Fase 3: Configuração centralizada
+# Fase 3: Configuração centralizada
 
 3.1 Criar projeto hr-config-server
 
@@ -135,7 +140,7 @@ Atenção: reinicie a IDE depois de adicionar as variáveis de ambiente
 
 --------------------------------------------------------------------
 
-#Fase 4: autenticação e autorização
+# Fase 4: autenticação e autorização
 
 4.1 Criar projeto hr-user
 
@@ -211,7 +216,7 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
 
 ---------------------------------------------------------------------
 
-#4.13 Configurando CORS
+# 4.13 Configurando CORS
 
 Teste no navegador:
 
