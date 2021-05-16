@@ -183,12 +183,19 @@ Basic authorization = "Basic " + Base64.encode(client-id + ":" + client-secret)
 Variáveis:
 
 *api-gateway: http://localhost:8765
+
 *config-host: http://localhost:8888
+
 *client-name: CLIENT-NAME
+
 *client-secret: CLIENT-SECRET
+
 *username: leia@gmail.com
+
 *password: 123456
+
 *token:
+
 
 Script para atribuir token à variável de ambiente do Postman:
 
@@ -199,9 +206,12 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
 
 4.12 Configuração de segurança para o servidor de configuração
 
+---------------------------------------------------------------------
+
 4.13 Configurando CORS
 
 Teste no navegador:
+
 
 fetch("http://localhost:8765/hr-worker/workers", {
   "headers": {
