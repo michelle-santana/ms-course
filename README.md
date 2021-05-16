@@ -50,6 +50,7 @@ server.port=8101
 Run configuration
 -Dserver.port=8002
 
+---------------------------------------------------------------------
 
 Fase 2: Eureka, Hystrix, Zuul
 
@@ -98,6 +99,8 @@ Mesmo o timeout de Hystrix e Ribbon configurado em um microsserviço, se o Zuul 
 
 Se o timeout estiver configurado somente em Zuul, o Hystrix vai chamar o método alternativo no microsserviço específico.
 
+---------------------------------------------------------------
+
 Fase 3: Configuração centralizada
 
 3.1 Criar projeto hr-config-server
@@ -127,6 +130,8 @@ Atenção: colocar @RefreshScope em toda classe que possua algum acesso às conf
 3.5 Repositório Git privativo
 Atenção: reinicie a IDE depois de adicionar as variáveis de ambiente
 
+--------------------------------------------------------------------
+
 Fase 4: autenticação e autorização
 
 4.1 Criar projeto hr-user
@@ -139,7 +144,9 @@ Fase 4: autenticação e autorização
 
 INSERT INTO tb_user (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
 
+
 INSERT INTO tb_user (name, email, password) VALUES ('Leia Red', 'leia@gmail.com', '$2a$10$NYFZ/8WaQ3Qb6FCs.00jce4nxX9w7AkgWVsQCG6oUwTAcZqP9Flqu');
+
 
 INSERT INTO tb_role (role_name) VALUES ('ROLE_OPERATOR');
 
@@ -151,6 +158,7 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
 
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
+
 
 4.5 UserRepository, UserResource, Zuul config
 
