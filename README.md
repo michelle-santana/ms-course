@@ -1,4 +1,5 @@
 Curso Microsserviços Java com Spring Boot e Spring Cloud
+
 Nelio Alves
 https://www.udemy.com/user/nelio-alves
 
@@ -6,9 +7,13 @@ https://youtube.com/devsuperior
 
 https://instagram.com/devsuperior.ig
 
+
 Fase 1: Comunicação simples, Feign, Ribbon
+
 1.1 Criar projeto hr-worker
 1.2 Implementar projeto hr-worker
+
+
 Script SQL
 
 INSERT INTO tb_worker (name, daily_Income) VALUES ('Bob', 200.0);
@@ -19,27 +24,42 @@ application.properties
 spring.application.name=hr-worker
 server.port=8001
 
+-----------------------------------------
+
 # Database configuration
+
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.username=sa
 spring.datasource.password=
 
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
+
+---------------------------------------
+
 1.3 Criar projeto hr-payroll
+
 application.properties
 
 spring.application.name=hr-payroll
 server.port=8101
+
 1.4 Implementar projeto hr-payroll (mock)
+
 1.5 RestTemplate
+
 1.6 Feign
 1.7 Ribbon load balancing
+
 Run configuration
 
 -Dserver.port=8002
+
+
 Fase 2: Eureka, Hystrix, Zuul
+
 2.1 Criar projeto hr-eureka-server
+
 2.2 Configurar hr-eureka-server
 Porta padrão: 8761
 
