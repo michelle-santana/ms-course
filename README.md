@@ -1,4 +1,4 @@
-Fase 1: Comunicação simples, Feign, Ribbon
+#Fase 1: Comunicação simples, Feign, Ribbon
 
 1.1 Criar projeto hr-worker
 
@@ -52,7 +52,7 @@ Run configuration
 
 ---------------------------------------------------------------------
 
-Fase 2: Eureka, Hystrix, Zuul
+#Fase 2: Eureka, Hystrix, Zuul
 
 2.1 Criar projeto hr-eureka-server
 
@@ -64,8 +64,11 @@ Acessar o dashboard no navegador: http://localhost:8761
 Eliminar o Ribbon de hr-payroll:
 
 *Dependência Maven
+
 *Annotation no programa principal
+
 *Configuração em application.properties
+
 
 Atenção: aguardar um pouco depois de subir os microsserviços
 
@@ -101,7 +104,7 @@ Se o timeout estiver configurado somente em Zuul, o Hystrix vai chamar o método
 
 ---------------------------------------------------------------
 
-Fase 3: Configuração centralizada
+#Fase 3: Configuração centralizada
 
 3.1 Criar projeto hr-config-server
 
@@ -132,7 +135,7 @@ Atenção: reinicie a IDE depois de adicionar as variáveis de ambiente
 
 --------------------------------------------------------------------
 
-Fase 4: autenticação e autorização
+#Fase 4: autenticação e autorização
 
 4.1 Criar projeto hr-user
 
@@ -208,7 +211,7 @@ if (responseCode.code >= 200 && responseCode.code < 300) {
 
 ---------------------------------------------------------------------
 
-4.13 Configurando CORS
+#4.13 Configurando CORS
 
 Teste no navegador:
 
