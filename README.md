@@ -77,12 +77,15 @@ Eliminar o Ribbon de hr-payroll:
 
 Atenção: aguardar um pouco depois de subir os microsserviços
 
-2.4 Random port para hr-worker
+------------------------------------------------------------------------
+# 2.4 Random port para hr-worker
 
 server.port=${PORT:0}
 eureka.instance.instance-id=${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 Atenção: deletar as configurações múltiplas de execução de hr-worker
+
+--------------------------------------------------------------------------------
 
 2.5 Tolerância a falhas com Hystrix
 
